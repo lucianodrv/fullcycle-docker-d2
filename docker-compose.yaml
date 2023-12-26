@@ -41,7 +41,7 @@ services:
     networks:
       - node-network
     volumes:
-      - ./node:/usr/node
+      - ./node:/usr/app/node
     tty: true
     depends_on:
       db:
