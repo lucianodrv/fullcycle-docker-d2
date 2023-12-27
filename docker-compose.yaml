@@ -41,7 +41,8 @@ services:
     networks:
       - node-network
     volumes:
-      - ./node:/usr/app/node
+      - ./node:/usr/app
+    command: [ "sh", "/usr/app/scripts/start.sh" ]
     tty: true
     depends_on:
       db:
